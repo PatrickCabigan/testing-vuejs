@@ -1,0 +1,54 @@
+:root {
+  --genshin-gold: #dbb165;
+  --genshin-bg: #1a1c22;
+  --genshin-card: #3b4255;
+  --genshin-text: #ece5d8;
+}
+
+body {
+  background-color: var(--genshin-bg);
+  color: var(--genshin-text);
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+#app {
+  width: 100%;
+  max-width: 500px;
+}
+
+.genshin-container {
+  background: rgba(59, 66, 85, 0.9);
+  border: 2px solid var(--genshin-gold);
+  border-radius: 4px;
+  padding: 25px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+.genshin-btn {
+  background: var(--genshin-gold);
+  color: #1a1c22;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+  transition: 0.2s;
+}
+
+.genshin-btn:hover {
+  filter: brightness(1.2);
+}
+
+input, textarea {
+  width: 100%;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid #4a5d75;
+  color: white;
+  margin-bottom: 15px;
+  padding: 12px;
+  box-sizing: border-box;
+}
